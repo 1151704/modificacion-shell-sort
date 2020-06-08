@@ -37,7 +37,7 @@ public class Prueba {
         long fin = System.currentTimeMillis();
         double tiempo = (double) ((fin - inicio));
 
-        String result = "shellSort1 \nTiempo: " + tiempo + " mseg.\n#N: " + array.getTamanio() + "\n#Iteraciones: " + String.format("%,d", contador) + "\n";
+        String result = "shellSort \nTiempo: " + tiempo + " mseg.\n#N: " + array.getTamanio() + "\n#Iteraciones: " + String.format("%,d", contador) + "\n";
 
         System.out.println(result);
 
@@ -74,7 +74,7 @@ public class Prueba {
 
     public static void main(String[] args) {
 
-        int[] sizes = new int[]{40000, 80000, 120000, 160000, 200000, 240000, 280000, 320000, 360000, 400000, 440000, 480000, 520000};
+        int[] sizes = new int[]{200000};//new int[]{40000, 80000, 120000, 160000, 200000, 240000, 280000, 320000, 360000, 400000, 440000, 480000, 520000};
 
         for (int size : sizes) {
 
